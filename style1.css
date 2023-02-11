@@ -1,0 +1,297 @@
+body{
+    background-color: rgb(241, 243, 243);
+}
+h1{
+    background-color: white;
+    width: auto;
+    margin:-10px 10px;
+    padding-top: 5px;
+    padding-left: 50px;
+    padding-bottom: 5px;
+    margin-left: -10px;
+    margin-right:-8px;
+    box-shadow: 0px 4px 4px gray;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.htxt{
+    color: rgb(92, 80, 80);
+}
+.htxt1{
+    color: lightskyblue;
+}
+
+.plus{
+    position:absolute;
+    top:65px;
+    right:350px;
+    
+}
+.button1{
+    font-size:25px;
+    height:40px;
+    width:40px;
+    background-color: skyblue;
+    border-radius: 50%;
+    border:none;
+}
+.b1{
+    color: white;
+}
+
+
+.newtask{
+    color: gray;
+    font-weight: bold;
+    font-size:large;
+    position: absolute;
+    top:75px;
+    right:230px;
+}
+.addnew{
+    color: gray;
+}
+.container{
+    /*display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    gap:20px;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.cards{
+    border-radius: 10px;
+    border: 0px solid gray;
+    background-color: white;
+    width: 285px;
+    height: 280px;
+    margin:10px 20px;
+    
+}
+.parisbox{
+    color:lightskyblue;
+}
+.cards:hover{
+    box-shadow: 6px 6px 4px gray;
+}
+input[type=checkbox] {
+    accent-color: gray;
+}
+input.checked{
+    width: 18px;
+    height: 18px;
+}
+.checked{
+    margin-left:20px;
+
+}
+label{
+    padding-left: 10px;
+    
+}
+.txtline{
+    text-decoration: line-through;
+    color: gray;
+}
+h3{
+    padding: 0px 15px;
+    color: lightskyblue;
+}
+.insidecards{
+    padding: 0px 20px;
+}
+.popupbox{
+    border: 1px solid gray;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    width: 380px;
+    position: fixed;
+    top:25%;
+    left:34%;
+    height: 200px;
+    margin: 10px;
+}
+
+.h2{
+    display: inline-block;
+    margin: 10px 10px 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(112, 109, 109);
+}
+.x{
+    font-size: 25px;
+    color: gray;
+    margin-left: 160px;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.learnc{
+    border:none;
+    width:340px;
+    margin:5px 10px 20px;
+    border-radius: 4px;
+    background-color: rgb(237, 233, 233);
+    padding:7px;
+}
+.buttontask{
+    border: none;
+    border-radius: 3px;
+    background-color:rgb(107, 195, 250);
+    padding: 10px;
+    width:135px;
+    font-size: 16px;
+    word-spacing: 4px;
+    margin-left: 230px;
+}
+.parislink{
+    color:lightskyblue;
+}
+a{
+    text-decoration: none;
+    
+}
+.a1{
+    color: white;
+}
+.bodyblur{
+    opacity: 35%;
+}
+.newbox{
+    align-content: center;
+}
+.newbox1{
+    border-radius: 10px;
+    border: 0px solid gray;
+    background-color: white;
+    width: 280px;
+    height: 240px;
+}
+.newbox1:hover{
+    box-shadow: 5px 5px 4px gray;
+}
+.arrow{
+    background-color: black;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    font-size: large;
+}
+.backbutton{
+    position:fixed;
+    top:84px;
+    left:460px;
+    font-size:25px;
+}
+.back{
+    color: gray;
+    font-weight: bold;
+    font-size:large;
+    position: fixed;
+    top:90px;
+    left:510px;
+}
+.newtask1{
+    color: gray;
+    font-weight: bold;
+    font-size:large;
+    position: fixed;
+    top:90px;
+    right:430px;
+}
+.plus1{
+    position: fixed;
+    top:80px;
+    right:555px
+}
+.parisbox{
+    background-color: white;
+    width:400px;
+    height: 270px;
+    margin: auto;
+    margin-top: 110px;
+    border-radius: 10px;
+}
+.parisbox:hover{
+    box-shadow: 6px 6px 4px gray;
+}
+.h2txt{
+    color: lightskyblue;
+    padding: 20px 0px 0px;
+    text-align: center;
+}
+
+/* media query */
+@media  (max-width:430px) {
+    .container{
+        flex-direction: column;
+        margin-top: 60px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .cards{
+        width:95%;
+        margin:10px;
+    }
+    h1{
+        padding: 6px;
+    }
+    .plus{
+        position:absolute;
+        top:10%;
+        left:40%;
+    }
+    .newtask{
+        position: absolute;
+        top:13%;
+        display: none;
+    }
+    .backbutton{
+        position:absolute;
+        top:12%;
+        left:3%;
+        font-size:25px;
+    }
+    .back{
+        position: absolute;
+        top:13%;
+        left:13%;
+    }
+    .plus1{
+        position:absolute;
+        top:12%;
+        left:50%;
+    }
+    .newtask1{
+        display: none;
+        position: absolute;
+        top:12%;
+        left:62%;
+    }
+    .parisbox{
+        width:100%;
+    }
+    .popupbox{
+        width: 98%;
+        
+        position: fixed;
+        top:25%;
+        left:1%;
+        height: 190px;
+        margin: 0px;
+    } 
+    .learnc{
+        width:86%;
+        margin:0px 10px 15px;
+        padding:4%;
+    }
+    .buttontask{
+        margin-left:60%;
+    }
+}
